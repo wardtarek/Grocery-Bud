@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grocery Bud</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body style="background-color: #f1f5f8">
+    <video src="media/istockphoto-1051219618-640_adpp_is.mp4" muted autoplay loop></video>
+    <div class="layer"></div>
+    <div
+      class="container position-absolute start-50 top-50 translate-middle "
+    >
+      <div class="mx-3 bg-white p-4 rounded-4">
+        <form class="grocery-form">
+        <p class="alert alert-danger text-center invisible">Please Enter Value</p>
+        <h3 class="text-center mb-4 fw-bold">Grocery Bud</h3>
+
+        <div class="input-group mb-3">
+          <input
+            id="grocery"
+            type="text"
+            class="form-control"
+            placeholder="e.g. eggs"
+            aria-label="e.g. eggs"
+            aria-describedby="submitBtn"
+          />
+          <button class="btn btn-info fw-semibold rounded-end" style="letter-spacing: 2px;" type="button" id="submitBtn">
+            Submit
+          </button>
+          <button class="btn btn-info fw-semibold d-none" style="letter-spacing: 2px;" type="button" id="addEditBtn">
+            Edit
+          </button>
+        </div>
+      </form>
+      <div class="p-3" id="list">
+        <!-- <div class="d-flex justify-content-between">
+          <p style="letter-spacing: 2px;" class="fw-semibold">eggs</p>
+          <div>
+            <i role="button" class="fa-solid fa-pen-to-square text-success m-1"></i>
+            <i role="button" class="fa-solid fa-trash text-danger"></i>
+          </div>
+        </div> -->
+      </div>
+      <p role="button" class="text-danger text-center fw-semibold invisible" id="clearBtn" style="letter-spacing: 2px;">Clear Items</p>
+      </div>
+    </div>
+    <button class="switch-btn text-info">
+        <span class="me-4 fw-medium">Play</span>
+        <span class="fw-medium">Pause</span>
+        <span class="switch bg-info"></span>
+    </button>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
